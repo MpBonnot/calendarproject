@@ -1,0 +1,103 @@
+/* CSS files add styling rules to your content */
+@font-face {
+    font-family: Abril;
+    src: url("AbrilFatface-Regular.ttf") format("opentype");
+}
+
+body {
+    font-family: Abril, helvetica, arial, sans-serif;
+    margin: 2em;
+    background: linear-gradient(224deg, #0b4d54, #28818a, #17a57a, #12a2c3, #043d1d);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+  }
+  
+  h1 {
+    font-size:6rem;
+    width: 80%;
+    padding:3rem;
+    margin: 0 auto;
+    color: orangered;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    max-width: 100%;
+  }
+  
+  .calendar {
+    width: 100%;
+    display: grid;
+    gride-template-columns: repeat(1, 1fr);
+    grid-gap: 1rem; 
+  }
+  
+  @media only screen and (min-width: 800px) {
+    .calendar {
+      grid-template-columns: repeat(7, 1fr);
+    }
+  }
+  
+  .day {
+    border: 1px solid white;
+    border-radius:5%;
+    background: white;
+    height: 10rem;
+    padding: 1rem;
+    transition: all 0.25s;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p{
+        font-size:1rem;
+        margin: 0 auto;
+        padding: 0rem;
+        color: orangered;
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        max-width: 100%;
+    }
+  
+  .day:hover {
+    margin-top: -2rem;
+  }
+  
+  .important {
+    border: 1px solid blue;
+    background: yellow;
+  }
+  
+  div{
+      display: block;
+      justify-content:center;
+      max-width:100%;
+  }
+
+  img {
+      width:100%;
+  }
+
+  iframe {
+      width:100%;
+  }
+ 
+  
+  @-webkit-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 96%}
+    50%{background-position:100% 5%}
+    100%{background-position:0% 96%}
+}
